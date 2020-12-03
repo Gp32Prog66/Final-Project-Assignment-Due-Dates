@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1606979245 source:e:\users\public\john\documents\c++ projects\final project\main.cpp
+	<iostream>
+	<stdlib.h>
+	<cstdlib>
+	<map>
+	<string>
+	<vector>
+	"AssignmentDueDates.cpp"
+
+1606978365 e:\users\public\john\documents\c++ projects\final project\assignmentduedates.cpp
+	<iostream>
+	<map>
+	<string>
+	<vector>
+
