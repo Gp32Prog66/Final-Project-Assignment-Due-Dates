@@ -20,16 +20,21 @@ double dueDate = 1.01;
 //Pointer Variable
     int *ptr;
 
-   
-private:
-
-
-
-   
+    //Map 
+    map<double, string>assignments;
 
     //Iterator
-    map<string, double>::iterator it;
+    map<double, string>::iterator it;
 
+private:
     
 
 };
+
+/*
+for(int a = 0; a <= assignment.size(); a++)
+{
+ cout << a + ". " << endl;
+}
+
+*/
