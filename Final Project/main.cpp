@@ -1,12 +1,12 @@
 #include <iostream>
-#include <stdlib.h>
-#include <cstdlib>
+#include <iomanip>
 #include <list>
 #include <map>
 #include <string>
 #include <vector>
 #include "Assignments.cpp"
 
+//Assignemnt Examples
 /*
  * Assignment Examples
  * Introduction 1/30
@@ -19,22 +19,18 @@
 
 using namespace std;
 
-//Swap Function. Will be Useful in the Change Due Date Function
-void swap(map<string, double>& inOrder)
-{
-    
-    //For Statement Iterator Here
-
-}
 
 //User Choices
 void Choices()
 {
+  cout << "What would you like to do? " << endl;
+
   cout << "1. View Default Assignments?" << endl;
-  cout << "2. Insert New Assignments?" << endl;
-  cout << "3. Remove Assignments?" << endl;
-  cout << "4. ChangeDate?" << endl;
-  cout << "5. Exit?" << endl;
+  cout << "2. View Current Assignments?" << endl;
+  cout << "3. Insert New Assignments?" << endl;
+  cout << "4. Remove Assignments?" << endl;
+  cout << "5. ChangeDate?" << endl;
+  cout << "6. Exit?" << endl;
   cout << "------------------------" << endl;
 }
 
@@ -52,7 +48,7 @@ void MapDefaultAssignments()
     AssignmentDueDates syllabus;
 
     //Iterator
-    map<string, double>::iterator it;
+    map<double,string>::iterator it;
 
     /*
     1. This Part of the Code was templated from Walter Savitch's
@@ -60,23 +56,22 @@ void MapDefaultAssignments()
                                                  map Template Class)
     */
 
-    int a;
-
     //Setting The Map
-    map<string, double> assignments;
-    assignments["Introduction"] = 1.30;
-    assignments["Coding Fundamentals"] = 2.25;
-    assignments["Midterm Paper"] = 3.20;
-    assignments["Queue Project"] = 3.30;
-    assignments["Tree Project"] = 4.29;
-    assignments["Final Paper"] = 5.03;
+    map<double, string> assignments;
+    assignments[1.30] = "Introduction";
+    assignments[2.25] = "Coding Fundamentals";
+    assignments[3.20] = "Midterm Paper";
+    assignments[3.30] = "Queue Project";
+    assignments[4.29] = "Tree Project";
+    assignments[5.03] = "Final Paper";
     
 
     //Iterating Through The Map
     for (it = assignments.begin(); it != assignments.end(); it++)
     {
       //Printing Out The Default Assignments For The Term
-      cout << it-> first << " " << it-> second << endl;
+      printf("%.2f", it-> first); 
+      cout << " " << it-> second << endl;
     }
    
 }
@@ -92,41 +87,35 @@ void CurrentAssignments()
   
   }
 
-
 }
 
 void InsertNewAssignments()
 {
     AssignmentDueDates syllabus;
     //Map
-    map<string, double> assignments;
-
-    //Pointer
-    int *ptr;
+   map<double, string> assignments;
 
     //Iterator
-    map<string, double>::iterator it;
-
-
+    map<double, string>::iterator it;
 
     cout << "What is the Name of the Assignment?" << endl;
-    getline(cin, syllabus.title);
+    getline(cin >> ws, syllabus.title); //Alternative to GetLine https://stackoverflow.com/questions/62374433/alternatives-of-getline
 
       cout << "What is the assignment due date?" << endl;
       cin >> syllabus.dueDate;
-
 
     cout << "------------------------" << endl;
     //Inserting Assignments and Due Dates
 
     MapDefaultAssignments();
-    assignments.insert({syllabus.title, syllabus.dueDate});
+    assignments.insert({syllabus.dueDate,syllabus.title,});
 
     //Iterating Through The Map
     for (it = assignments.begin(); it != assignments.end(); it++)
     {
       //Printing Out the Map
-      cout << it-> second << " " << it-> first << endl;
+      printf("%.2f", it-> first);
+      cout << " " << it-> second << endl;
     }
 
 }
@@ -138,38 +127,43 @@ void RemoveAssignments()
 
      //The Assignments Have A Title and a Due Date, which will be a
     //double in our case
-    map<string, double> assignments;
+    map<double, string> assignments;
 
-    //Iterator
-    map<string, double>::iterator it;
 
-    //Pointer
-    int *ptr;
+  //Asking What Assignment Title the User Chooses to Delete
+   
+   int numberChoice;
 
-   string title;
+//Ask User What Number They Want to Delete
       cout << "What Assignment are you deleting?" << endl;
-      cin >> title;
+      cin >> numberChoice;
+
+    cout << "------------------------" << endl;
+      CurrentAssignments();
+
+       //Iterator
+    map<double,string>::iterator it = assignments.find(numberChoice);
+
+//Delete's the Position 
+    assignments.erase(numberChoice);
 
     cout << "------------------------" << endl;
 
-    assignments.erase({1});
-
-
     //Iterate Through Entire Map to Selected Pointer to the Specific Map
-    for (it = assignments.begin(); it != assignments.end(); it++)
+    for (map<double, string>::iterator it = assignments.begin(); it != assignments.end(); it++)
     {
-      //Choice
-    int choice;
-      assignments.erase({1});
+      //Print out Pointer to Key and Value
+     printf("%.2f", (*it).first);
+     cout << (*it).second << endl; 
     }
 
-    
 }
-
 
 double ChangeDate(double newDueDate)
 {
     AssignmentDueDates syllabus;
+
+    map<double, string> assignments;
 
      cout << "------------------------" << endl;
       cout << "What Assignment Date are you Changing?" << endl;
@@ -179,23 +173,19 @@ double ChangeDate(double newDueDate)
       double dueDate;
       cout << "Insert the new due date" << endl;
       cin >> syllabus.dueDate;
-
-//Pointer
-    int *ptr;
     
-
   AssignmentDueDates newDate;
+
+  //printf("%.2f");
 
     return newDueDate;
 }
 
-
 int main() {
-
 
     //The Assignments Have A Title and a Due Date, which will be a
     //double in our case
-    map<string, double> assignments;
+    map<double, string> assignments;
     int choice;
 
     cout << "\nWelcome. This Program demonstrates manipulation of "
@@ -206,29 +196,35 @@ int main() {
 
     do
     {
-    cout << "What would you like to do? " << endl;
+    //Main Menu
+    
     Choices();
     cin >> choice;
 
     //View Default Assignments
+
     if(choice == 1)
     {
       MapDefaultAssignments();
     }
 
-    //Insert A New Assignment
     else if(choice == 2)
+    {
+      CurrentAssignments();
+    }
+
+    //Insert A New Assignment
+    else if(choice == 3)
     {
       cout << "------------------------" << endl;
       cout << "Current Assignments" << endl;
       cout << "************************" << endl;
       CurrentAssignments();
       InsertNewAssignments();
-
     }
 
     //Delete An Assignment
-    else if(choice == 3)
+    else if(choice == 4)
     {
       cout << "------------------------" 
       << endl;
@@ -241,7 +237,7 @@ int main() {
     }
 
     //Change Due Date to an Assignment
-    else if(choice == 4)
+    else if(choice == 5)
     {
 
         double n;
@@ -255,7 +251,7 @@ int main() {
     }
 
     //Exit Program
-    else if(choice == 5)
+    else if(choice == 6)
     {
       ExitProgram();
     }
