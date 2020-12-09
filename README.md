@@ -9,12 +9,12 @@ organize data.
 
 
 ## DefaultAssignments()
-This function views the entire default assignments and their due dates. This also loads onto the CurrentAssignments Function. This could be useful if
-the program doesn't currently have any assignments in the CurrentAssignments function.
+This function views the entire default assignments and their due dates. This also loads onto the <code> CurrentAssignments </code> Function. This could be useful if
+the program doesn't currently have any assignments in the <code> CurrentAssignments function </code>.
 ![](https://github.com/Gp32Prog66/Final-Project-Assignment-Due-Dates/blob/main/Screen%20Shots/Load-Default-Assignments.PNG)
 
 ## CurrentAssignments()
-Stores all of the Assignments that are loaded from the DefaultAssignments(), but also any other assignments that were inserted and/or deleted by the
+Stores all of the Assignments that are loaded from the <code> DefaultAssignments() </code>, but also any other assignments that were inserted and/or deleted by the
 user. This can be viewed any time at the main menu.
 
 ![Alt text](https://github.com/Gp32Prog66/Final-Project-Assignment-Due-Dates/blob/main/Screen%20Shots/Viewing-Assignments.PNG)
@@ -34,7 +34,7 @@ iterate Through the entire map and will print out the updated list with the help
 ![](https://github.com/Gp32Prog66/Final-Project-Assignment-Due-Dates/blob/main/Screen%20Shots/Deleting-Assignments.PNG)
 
 ## ExitProgram()
-This function simply exits the program and returns a 0 depending if you are compiling it in an IDE like Netbeans or Eclipse.
+This function simply exits the program and returns a <code> 0 </code> depending if you are compiling it in an IDE like Netbeans or Eclipse.
 ![](https://github.com/Gp32Prog66/Final-Project-Assignment-Due-Dates/blob/main/Screen%20Shots/Exit.PNG)
 
 #### Citations
