@@ -1,7 +1,7 @@
 # Final-Project-Assignment-Due-Dates
 This is the Final Project For CIT-245 at CCAC. What my program does is that it inserts, deletes, and views assignments and the due dates. It can proove
-to be useful when keeping track of all of the assignments. This Program helped me learn and understand the fundamentals of maps and how they manipulate and
-organize data. 
+to be useful when keeping track of all of the assignments. This Program helped me learn and understand the fundamentals of maps and how it manipulates and
+organizes data. 
 
 
 ## Main Menu
