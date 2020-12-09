@@ -27,14 +27,5 @@ double dueDate = 1.01;
     map<double, string>::iterator it;
 
 private:
-    
 
 };
-
-/*
-for(int a = 0; a <= assignment.size(); a++)
-{
- cout << a + ". " << endl;
-}
-
-*/
