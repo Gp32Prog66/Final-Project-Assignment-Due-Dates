@@ -2,6 +2,7 @@
 This is the Final Project For CIT-245 at CCAC. What my program does is that it inserts, deletes, and views assignments and the due dates. It can proove
 to be useful when keeping track of all of the assignments. This Program helped me learn and understand the fundamentals of maps and how they manipulate and
 organize data. 
+Final-Project-Assignment-Due-Dates/Screen Shots/
 
 ## Main Menu
 ![](Screen Shots/Main-Menu.png)
@@ -10,7 +11,7 @@ organize data.
 ## DefaultAssignments()
 This function views the entire default assignments and their due dates. This also loads onto the CurrentAssignments Function. This could be useful if
 the program doesn't currently have any assignments in the CurrentAssignments function.
-![](Screen Shots/Load-Default-Assignments.png)
+![](Final-Project-Assignment-Due-Dates/Screen Shots/Load-Default-Assignments.png)
 
 ## CurrentAssignments()
 Stores all of the Assignments that are loaded from the DefaultAssignments(), but also any other assignments that were inserted and/or deleted by the
