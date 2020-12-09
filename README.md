@@ -48,5 +48,6 @@ Huge help on understanding the delete function and how it could be used with use
 on explaining each line of code.
 
 + <https://stackoverflow.com/questions/62374433/alternatives-of-getline>
+
 This was helpful for trying to figure out why the <code> getline </code> method wasn't working on lines 106. <code> Getline </code> kept skipping,
 but thanks to this source, I was able to get it working. 
