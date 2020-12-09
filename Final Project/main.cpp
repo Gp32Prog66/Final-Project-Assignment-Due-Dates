@@ -141,10 +141,7 @@ void RemoveAssignments()
      //The Assignments Have A Title and a Due Date, which will be a
     //double in our case
     //map<double, string> assignments;
-
-  //Asking What Assignment Title the User Chooses to Delete
    
- 
 
 //Ask User What Number They Want to Delete
       cout << "What Assignment are you deleting? Enter by Due Date (Ex 1.01)" << endl;
@@ -157,6 +154,8 @@ void RemoveAssignments()
 //below for the iterator and the find function
 //https://www.guru99.com/cpp-map-stl.html#5 
        //Iterator
+
+ //Using the Find Method to search for what the user has inputed
   it = assignments.find(syllabus.dueDate);
 
 //Find The Choice Using the Iterator
@@ -173,6 +172,7 @@ assignments.erase(it);
      printf("%.2f", (*it).first); //Format Date to show Date Properly with printf()
      cout << " " << (*it).second << endl; 
     }
+    //End of Reference
 
 }
 
