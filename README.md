@@ -6,7 +6,7 @@ to be useful when keeping track on all assignments. This Program helped me learn
 ## DefaultAssignments()
 This function views the entire default assignments and their due dates. This also loads onto the CurrentAssignments Function. This could be useful if
 the program doesn't currently have any assignments in the CurrentAssignments function.
-![](Screen/Load Default Assignments.png)
+![](Screen/Load%20Default%20Assignments.png)
 
 ## CurrentAssignments()
 Stores all of the Assignments that are loaded from the DefaultAssignments(), but also any other assignments that were inserted and/or deleted by the
