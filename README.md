@@ -36,14 +36,17 @@ This function simply exits the program and returns a 0 depending if you are comp
 
 #### Citations
 + Walter Savitch Absolute C++ Sixth Addition  Pg 893-899
-Walter Savitch does a pretty good job on laying down the basic template of the map. This helped with getting to know about
-maps and how the function. 
+
+Walter Savitch does a pretty good job on laying down the basic template of the map with his book. This helped with getting to know about
+maps and how they function. 
 
 + <https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/>
+
 Geeks for Geeks is such a wonderful website to check out various coding concepts and ideas. I would recommend checking this
 site out. This link gave me a basic understanding on how to insert data into maps in various ways. 
 
 + <https://www.guru99.com/cpp-map-stl.html#5> 
+
 Huge help on understanding the delete function and how it could be used with user input in mind. This source does an excellent job
 on explaining each line of code.
 
