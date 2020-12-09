@@ -6,7 +6,7 @@ to be useful when keeping track on all assignments. This Program helped me learn
 ## DefaultAssignments()
 This function views the entire default assignments and their due dates. This also loads onto the CurrentAssignments Function. This could be useful if
 the program doesn't currently have any assignments in the CurrentAssignments function.
-![](Screen/Load%20Default%20Assignments.png)
+![](Screen/Load-Default-Assignments.png)
 
 ## CurrentAssignments()
 Stores all of the Assignments that are loaded from the DefaultAssignments(), but also any other assignments that were inserted and/or deleted by the
@@ -28,18 +28,12 @@ compiling it in an IDE like Netbeans or Eclipse.
 
 #### Citations
 
-<https://www.cplusplus.com/reference/map/map/>
-
 <https://www.geeksforgeeks.org/sorting-a-map-by-value-in-c-stl/>
 
 Walter Savitch Absolute C++ Sixth Addition  Pg 893-899
 
-<https://stackoverflow.com/questions/2974855/how-to-create-a-function-with-return-type-map>
-
 <https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/>
 
 <https://www.guru99.com/cpp-map-stl.html#5>
-
-Walter Savitch Absolute C++ Sixth Addition  Pg 883-889
 
 <https://stackoverflow.com/questions/62374433/alternatives-of-getline>
