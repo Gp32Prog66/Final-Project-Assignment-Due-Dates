@@ -16,9 +16,6 @@ Allows the user to insert any new assignments to the program. It will what the a
 ## RemoveAssignments()
 Allows the user to remove assignments. All that the user has to do is type that name of the assignment and it should remove the assignment
 
-## ChangeDate()
-Allows the user to modify a specific assignment's due date. 
-
 ## ExitProgram()
 This function simply exits the program and returns a 0 depending if you are
 compiling it in an IDE like Netbeans or Eclipse.
