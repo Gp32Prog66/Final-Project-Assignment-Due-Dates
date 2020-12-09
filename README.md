@@ -2,7 +2,7 @@
 This is the Final Project For CIT-245 at CCAC. What my program does is that it inserts, deletes, and views assignments and the due dates. It can proove
 to be useful when keeping track of all of the assignments. This Program helped me learn and understand the fundamentals of maps and how they manipulate and
 organize data. 
-Final-Project-Assignment-Due-Dates/Screen Shots/
+
 
 ## Main Menu
 ![](Screen Shots/Main-Menu.png)
@@ -33,7 +33,7 @@ iterate Through the entire map and will print out the updated list with the help
 
 ## ExitProgram()
 This function simply exits the program and returns a 0 depending if you are compiling it in an IDE like Netbeans or Eclipse.
-![](Screen Shots/Exit.png)
+![](https://github.com/Gp32Prog66/Final-Project-Assignment-Due-Dates/blob/main/Screen%20Shots/Exit.PNG)
 
 #### Citations
 + Walter Savitch Absolute C++ Sixth Addition  Pg 893-899
