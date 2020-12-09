@@ -2,16 +2,22 @@
 This is the Final Project For CIT-245 at CCAC
 
 ## DefaultAssignments()
-This function simply views the entire default assignments and their due dates. This could be useful if
+This function views the entire default assignments and their due dates. This also loads onto the CurrentAssignments Function. This could be useful if
 the program doesn't currently have any assignments in the CurrentAssignments function.
 
 ## CurrentAssignments()
+Stores all of the Assignments that are loaded from the DefaultAssignments(), but also any other assignments that were inserted and/or deleted by the
+user. This can be viewed any time at the main menu. 
 
 ## InsertNewAssignments()
+Allows the user to insert any new assignments to the program. It will what the assignment name is and what the due date will be for the assignment. 
+
 
 ## RemoveAssignments()
+Allows the user to remove assignments. All that the user has to do is type that name of the assignment and it should remove the assignment
 
 ## ChangeDate()
+Allows the user to modify a specific assignment's due date. 
 
 ## ExitProgram()
 This function simply exits the program and returns a 0 depending if you are
