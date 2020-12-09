@@ -15,13 +15,15 @@ the program doesn't currently have any assignments in the CurrentAssignments fun
 
 ## CurrentAssignments()
 Stores all of the Assignments that are loaded from the DefaultAssignments(), but also any other assignments that were inserted and/or deleted by the
-user. This can be viewed any time at the main menu. 
+user. This can be viewed any time at the main menu.
+
 ![Alt text](https://github.com/Gp32Prog66/Final-Project-Assignment-Due-Dates/blob/main/Screen%20Shots/Viewing-Assignments.PNG)
 
 ## InsertNewAssignments()
 Allows the user to insert any new assignments to the program. It will ask what the assignment name is and what the due date will be for the assignment. The
 insert method is key when it comes to inserting new data in a map. Lines 117-122 is what it takes to iterate through each key of a map and will print out the
 results. 
+
 ![](https://github.com/Gp32Prog66/Final-Project-Assignment-Due-Dates/blob/main/Screen%20Shots/Inserting-Assignments.PNG)
 
 ## RemoveAssignments()
